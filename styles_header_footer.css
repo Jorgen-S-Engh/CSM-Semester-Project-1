@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Primus-bold;
+    src: url("../fonts/Primus Bold.otf");
+    font-family: Primus-regular;
+    src:url("../fonts/Primus Regular.otf")
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: Primus-regular;
+    box-sizing: border-box;
+}
+
+:root{
+    --red:#D60001;
+    --blue:#002E40;
+
+}
+
+nav{
+    display:none;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:100px;
+
+
+}
+header img{
+    width:65px;
+    margin:25px;
+}
+
+.fa-bars{
+    font-size:2rem;
+    margin:25px;
+    color: var(--red)
+}
+
+footer{
+    margin-top:20px;
+    min-height:200px;
+    background-color:var(--blue);
+    display:flex;
+    color:white;
+    justify-content: space-between  ;
+}
+
+
+
