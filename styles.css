@@ -14,7 +14,12 @@
 
 :root{
     --red:#D60001;
+    --blue:#002E40;
 
+}
+
+nav{
+    display:none;
 }
 
 header{
@@ -37,5 +42,41 @@ header img{
 
 }
 
+main{
+    display:flex;
+    flex-direction: column;
+}
+
+.button{
+    width:150px;
+    height:45px;
+    background-color: var(--red);
+    position: relative;
+    bottom:50px;
+    left:100px;
+}
+
+.info-main-pic{
+    height:200px;
+    background-color:var(--blue);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:-5px;
+}
+
+.info-main-pic h1, .info-main-pic p{
+    color:white;
+    font-weight: normal;
+    text-align: center;
+    margin:10px;
+
+}
+.info-main-pic p{
+    max-width: 300px;
+    margin:0 auto;
+    
+
+}
 
 
