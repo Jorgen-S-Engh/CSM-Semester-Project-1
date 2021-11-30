@@ -15,12 +15,6 @@ main{
     align-items: flex-end;
 }
 
-.button{
-    width:150px;
-    height:55px;
-    background-color:var(--red);
-    margin-bottom:20px;
-}
 
 .button{
     color:white;
@@ -28,6 +22,10 @@ main{
     text-align: center;
     line-height:55px;
     font-size:2rem;
+    width:150px;
+    height:55px;
+    background-color:var(--red);
+    margin-bottom:20px;
 }
 
 .info-main-pic{

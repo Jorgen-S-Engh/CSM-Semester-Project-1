@@ -2,68 +2,118 @@
     font-family: Primus-bold;
     src: url("../fonts/Primus Bold.otf");
     font-family: Primus-regular;
-    src:url("../fonts/Primus Regular.otf")
+    src: url("../fonts/Primus Regular.otf");
 }
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     font-family: Primus-regular;
     box-sizing: border-box;
 }
 
-:root{
-    --red:#D60001;
-    --blue:#002E40;
-
+:root {
+    --red: #d60001;
+    --blue: #002e40;
 }
 
-nav{
-    display:none;
-}
-
-header{
-    display:flex;
+header {
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    height:100px;
-
-
-}
-header img{
-    width:65px;
-    margin:25px;
+    min-height: 100px;
 }
 
-.fa-bars{
-    font-size:2rem;
-    margin:25px;
-    color: var(--red)
+.icon-container {
+    display: flex;
 }
 
-footer{
-    margin-top:20px;
-    min-height:200px;
-    background-color:var(--blue);
-    display:flex;
-    color:white;
-    justify-content: space-between;
+.icon-container a img {
+    position: absolute;
+    right: 20px;
+    top:5px;
 }
 
-.footer-info{
-    margin:20px;
-    
+.hamburger-container {
+    display: flex;
+    flex-direction: column;
 }
 
-.footer-info h3{
+header img {
+    width: 65px;
+}
+
+.fa-bars {
     font-size: 2rem;
-    font-weight:normal;
-    margin-bottom:20px;
+    margin: 25px;
+    color: var(--red);
 }
 
-::placeholder{
-    color:black;
-    font-size:1rem;
+nav {
+    display: none;
+    z-index: 1;
 }
 
+nav ul {
+    padding: 0px 50px;
+    background-color: var(--blue);
+    width: 100vw;
+    margin-top:10px;
+}
 
+nav ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 20px;
+    min-height: 200px;
+    background-color: var(--blue);
+    display: grid;
+    color: white;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+       
+    /* position:absolute;
+    bottom:0; */
+}
+
+footer h3 {
+    margin-top: 10px;
+}
+
+.footer-info-left {
+    margin-left: 10px;
+}
+
+.footer-info-right {
+    margin-right: 10px;
+}
+
+footer h3,
+footer p {
+    font-size: 14px;
+}
+
+::placeholder {
+    color: black;
+    font-size: 0.8rem;
+}
