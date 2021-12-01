@@ -47,5 +47,50 @@ main{
 .info-main-pic p{
     max-width: 300px;
     margin:0 auto;
+    font-size: 0.9rem;
 }
 
+/* Main-content-index */
+
+.main-content-index{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.first-section-index{
+    min-width:90%;
+    height:400px;
+    margin:10px;
+    background-image: url("../images/andrew-ruiz-348421.jpg");
+    align-self: center;
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.first-section-index div{
+    background-color:var(--blue);
+    height:40%;
+    text-align:center;
+    color:white;
+    
+}
+
+.first-section-index h2{
+    font-weight:normal;
+    margin:10px;
+}
+
+.first-section-index p{
+    margin-bottom:30px;
+}
+
+.first-section-index a{
+    padding:10px;
+    background-color:var(--red);
+    color:white;
+    text-decoration: none;
+    
+}
