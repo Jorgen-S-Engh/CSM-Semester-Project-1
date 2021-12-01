@@ -81,6 +81,10 @@ nav ul li a {
     display: block;
 }
 
+
+body{
+    min-height: 100vh;
+}
 /* Footer */
 
 footer {
@@ -91,10 +95,11 @@ footer {
     color: white;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
+    
        
     /* position:absolute;
     bottom:0; */
-}
+} 
 
 footer h3 {
     margin-top: 10px;
@@ -110,10 +115,19 @@ footer h3 {
 
 footer h3,
 footer p {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 ::placeholder {
     color: black;
     font-size: 0.8rem;
+}
+
+.footer-info-left {
+    margin-left:10px;
+}
+
+.footer-info-right input{
+    width:75%;
+    
 }
