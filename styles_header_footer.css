@@ -97,19 +97,14 @@ nav ul li a {
 /* Footer */
 
 footer {
-    margin-top: 20px;
+    margin-top:10px;
     min-height: 200px;
     background-color: var(--blue);
     display: grid;
     color: white;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
-    margin-top:auto;
     
-    
-       
-    /* position:absolute;
-    bottom:0; */
 } 
 
 footer h3 {

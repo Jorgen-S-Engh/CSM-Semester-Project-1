@@ -1,20 +1,38 @@
-/* Front page*/
 
-main{
+.index{
+    display:grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    grid-template-rows: repeat(5, 400px);
+    grid-template-areas:
+    "first-item"
+    "sec-item"
+    "third-item"
+    "four-item"
+    "five-item"
+}
+
+
+.first-item-index{
+    min-width:90%;
+    height:400px;
+    background-image: url("../images/billetto-editorial-334686-high-res.jpg");
+    align-items: center;
+    background-size:cover;
+    background-position: center;
     display:flex;
     flex-direction: column;
+    justify-content: flex-end;
+    grid-area: first-item;
+
 }
 
-.main-pic{
-    width:100%;
-    height:205px;
-    background-image: url("images/billetto-editorial-334686-high-res mobile.jpg");
-    background-repeat: no-repeat;
-    display:flex;
-    justify-content: center;
-    align-items: flex-end;
+.first-item-index div{
+    background-color:var(--blue);
+    height:40%;
+    text-align:center;
+    color:white;
 }
-
 
 .button{
     color:white;
@@ -28,69 +46,83 @@ main{
     margin-bottom:20px;
 }
 
-.info-main-pic{
-    height:200px;
-    background-color:var(--blue);
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top:-5px;
+.first-item-index h1 {
+    font-weight:normal;
+    font-size:1.5rem;
+    margin:20px;
 }
 
-.info-main-pic h1, .info-main-pic p{
-    color:white;
-    font-weight: normal;
-    text-align: center;
-    margin:10px;
-}
 
-.info-main-pic p{
-    max-width: 300px;
-    margin:0 auto;
-    font-size: 0.9rem;
-}
+/* universal items rules */
 
-/* Main-content-index */
-
-.main-content-index{
-    display:flex;
-    flex-direction: column;
-
-}
-
-.first-section-index{
+.item-index{
     min-width:90%;
     height:400px;
-    margin:10px;
-    background-image: url("../images/andrew-ruiz-348421.jpg");
-    align-self: center;
-    background-size:cover;
+    margin:0px 10px;
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.first-section-index div{
+.item-index div{
     background-color:var(--blue);
     height:40%;
     text-align:center;
     color:white;
-    
 }
 
-.first-section-index h2{
-    font-weight:normal;
-    margin:10px;
-}
-
-.first-section-index p{
-    margin-bottom:30px;
-}
-
-.first-section-index a{
+.button-index{
     padding:10px;
     background-color:var(--red);
     color:white;
     text-decoration: none;
-    
 }
+
+.item-index h2{
+    margin:10px;
+    font-weight:normal;
+}
+
+.item-index p{
+    margin-bottom:25px;
+
+}
+
+/* items */
+
+.sec-item-index{
+    grid-template-areas:sec-item;
+    background-image: url("../images/andrew-ruiz-348421.jpg");
+    background-size:cover;
+}
+
+.third-item-index{
+    grid-template-areas: third-item;
+    background-image: url("../images/mammoth-1257288_1920.jpg");
+    background-size:cover;
+
+}
+
+.four-item-index{
+    grid-template-areas: four-item;
+    background-image: url("../images/pexels-photomix-company-518244.jpg");
+    background-size:cover;
+
+}
+
+.five-item-index{
+    grid-template-areas: five-item;
+    background-image: url("../images/pexels-pavel-danilyuk-8294651.jpg");
+    background-size:cover;
+    background-position: center;
+
+}
+
+
+
+
+
+
+
+
+
