@@ -118,6 +118,78 @@
 
 }
 
+/* Exhibition-all.html */
+
+
+.grid-container-ex-all{
+    display:grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows:repeat(4, 400px);
+    row-gap: 10px;
+}
+
+.item-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url("../images/billetto-editorial-334686-high-res.jpg");
+    background-size: cover;
+    height:300px;
+
+}
+
+.item-card{
+    height:120px;
+    background-color:var(--blue);
+    color:white;
+    width:80%;
+    align-self: center;
+    position: relative;
+    top:50px;
+    text-align: center;
+    filter:drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+
+}
+
+.item-card p, .item-card h1{
+    color:white;
+}
+
+.item-card h1, .item-card h2{
+    font-weight:normal;
+    font-size: 1.5rem;
+    margin:10px;
+}
+
+.item-card p{
+    font-size:0.8rem;
+}
+
+.ex-item-two{
+    background-image: url("../images/andrew-ruiz-348421.jpg");
+}
+
+.ex-card-two{
+    background-color:white;
+    
+    
+}
+
+.item-card a{
+    text-decoration: none;
+}
+
+
+.ex-card-two p, .ex-item-two h2{
+    color:black;
+    font-weight: normal;
+}
+
+
+
+
+
+
 
 
 
