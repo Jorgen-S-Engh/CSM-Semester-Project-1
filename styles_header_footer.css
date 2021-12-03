@@ -104,7 +104,6 @@ footer {
     color: white;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
-    
 } 
 
 footer h3 {
@@ -135,5 +134,16 @@ footer p {
 
 .footer-info-right input{
     width:75%;
-    
+}
+
+.button-footer{
+    width:75%;
+    margin-top:5px;
+    background-color:white;
+    cursor: pointer;
+}
+
+.button-footer:hover{
+    background-color:var(--red);
+    color:white;
 }
