@@ -65,7 +65,7 @@ nav {
 }
 
 nav ul {
-    padding: 0px 50px;
+    padding: 10px 50px;
     background-color: var(--blue);
     width: 100vw;
     margin-top:10px;
