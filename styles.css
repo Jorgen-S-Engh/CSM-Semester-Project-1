@@ -236,7 +236,10 @@ table td{
     display:flex;
     flex-direction: column;
     align-items: center;
+}
 
+.info-ex p{
+    max-width:90%;
 }
 
 .bullet-points-ex li{
@@ -260,8 +263,9 @@ table td{
 }
 
 .mid-ex > div p{
+    max-width:50%;
+    margin:0 auto;
     
-    margin:10px auto;
 }
 
 
