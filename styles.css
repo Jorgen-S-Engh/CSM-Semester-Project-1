@@ -208,7 +208,7 @@
     justify-content: flex-end;
     width:100%;
     height:600px;
-    background-image:url("../images/pexels-pavel-danilyuk-8294651.jpg") ;
+    background-image:url("../images/maximalfocus-eZWGK5sIiBM-unsplash.jpg") ;
     background-size: cover;
     background-position: center;
 }
@@ -232,18 +232,24 @@ table td{
     width:50%;
 }
 
-.info-ex{
+.info-ex, .last-info-ex{
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
-.info-ex p{
-    max-width:90%;
+.info-ex, .last-info-ex{
+    max-width: 75%;
+    margin:0 auto;
 }
 
-.bullet-points-ex li{
-    list-style: circle;
+
+.info-ex h2, .bullet-points-ex{
+    margin:10px;
+}
+
+.bullet-points-ex{
+    text-align: left;
 }
 
 .mid-ex{
@@ -251,7 +257,8 @@ table td{
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
-    border:solid black 1px; /* husk å fjerne denne etter bilde er på plass */
+    background-image:url("../images/possessed-photography-dRMQiAubdws-unsplash.jpg");
+    background-size:cover;
 }
 
 .mid-ex >div{
@@ -267,6 +274,54 @@ table td{
     margin:0 auto;
     
 }
+
+.last-info-ex{
+    margin-top:10px;
+    
+    
+}
+
+/* See also section - exhibition.html */
+
+.item-container{
+    background-image:url("../images/andrew-ruiz-348421.jpg");
+}
+
+.see-also{
+    display:flex;
+    flex-direction: column;
+    margin: 15px 0px;
+    text-align: center;
+    height:450px;
+    background-color:#A3A3A3;
+}
+
+.see-also h3{
+    margin:15px;
+}
+
+.button-see-also{
+    position: relative;
+    top:55px;
+
+} 
+
+.dotted-lines{
+    height:35%;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+.fa-circle{
+    font-size: 0.7rem;
+    margin:10px 2px;
+
+}
+
+
+
 
 
 
