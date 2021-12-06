@@ -14,6 +14,7 @@
 
 html{
     height:100%;
+
 }
 
 body{
@@ -92,6 +93,10 @@ nav ul li a {
     display: block;
 }
 
+.icon-desktop{
+    display:none;
+}
+
 
 
 /* Footer */
@@ -128,10 +133,6 @@ footer p {
     font-size: 0.8rem;
 }
 
-.footer-info-left {
-    margin-left:10px;
-}
-
 .footer-info-right input{
     width:75%;
 }
@@ -147,3 +148,86 @@ footer p {
     background-color:var(--red);
     color:white;
 }
+
+@media only screen and (min-width:600px){
+    nav{
+        display:flex;
+    }
+
+    .icon-container a{
+        display:none;
+    }
+
+    nav ul {
+        display:flex;
+        justify-content: space-around;
+        background-color:white;
+        align-items: center;
+        width:80vw;
+    }
+
+    nav ul li a{
+        color:var(--blue);
+        font-size: 1rem;
+        padding:5px;
+    }
+
+    nav ul li a:hover{
+        background-color:var(--blue);
+        color:white;
+        font-weight: normal;
+    }
+
+    #hamburger-menu, .fa-bars{
+        display:none;
+    }
+
+    .icon-desktop{
+        display:block;
+    }
+
+    .footer-info-right input{
+        display:flex;
+        max-width:150px;
+    }
+
+    .button-footer{
+        max-width:150px;
+    }
+
+    footer h3,
+    footer p {
+    font-size: 1.2rem;
+    margin:10px;
+    }
+
+    footer{
+        justify-items: center;
+    }
+
+}
+
+
+@media only screen and (min-width:1000px){
+    nav{
+        margin:25px;
+    }
+
+
+    nav ul li a{
+        font-size: 1.5rem;
+        padding:15px;
+    }
+/* 
+    nav ul {
+
+        max-width:2000px;
+
+    } */
+
+    .hamburger-container{
+        max-width:2000px;
+    }
+
+}
+

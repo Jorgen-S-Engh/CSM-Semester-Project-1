@@ -85,7 +85,11 @@
 
 .item-index p{
     margin-bottom:25px;
+}
 
+.item-index{
+    background-size:cover;
+    background-position: center;
 }
 
 /* items */
@@ -93,29 +97,41 @@
 .sec-item-index{
     grid-template-areas:sec-item;
     background-image: url("../images/andrew-ruiz-348421.jpg");
-    background-size:cover;
 }
 
 .third-item-index{
     grid-template-areas: third-item;
     background-image: url("../images/mammoth-1257288_1920.jpg");
-    background-size:cover;
-
 }
 
 .four-item-index{
     grid-template-areas: four-item;
     background-image: url("../images/pexels-photomix-company-518244.jpg");
-    background-size:cover;
-
 }
 
 .five-item-index{
     grid-template-areas: five-item;
     background-image: url("../images/pexels-pavel-danilyuk-8294651.jpg");
-    background-size:cover;
-    background-position: center;
+}
 
+.six-item-index{
+    grid-template-areas: six-item;
+    background-image: url("../images/heart-2607178_1920.jpg");
+}
+
+.seven-item-index{
+    grid-template-areas: seven-item;
+    background-image: url("../images/genoa-956405_1920.jpg");
+}
+
+.eight-item-index{
+    grid-template-areas: eight-item;
+    background-image: url("../images/roberto-nickson-396152.jpg"); 
+}
+
+.nine-item-index{
+    grid-template-areas: nine-item;
+    background-image: url("../images/maximalfocus-eZWGK5sIiBM-unsplash.jpg");
 }
 
 /* Exhibition-all.html */
@@ -148,7 +164,6 @@
     top:50px;
     text-align: center;
     filter:drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
-
 }
 
 .item-card p, .item-card h1, .item-card h2{
@@ -171,14 +186,11 @@
 
 .ex-card-two, .ex-card-four{
     background-color:white;
-    
-    
 }
 
 .item-card a{
     text-decoration: none;
 }
-
 
 .ex-card-two p, .ex-item-two h2, .ex-item-four h2, .ex-item-four p{
     color:black;
@@ -194,6 +206,8 @@
     background-image: url("../images/mammoth-1257288_1920.jpg");
 
 }
+
+
 
 .first-info{
     font-weight: bold;
@@ -249,7 +263,7 @@ table td{
 }
 
 .bullet-points-ex{
-    text-align: left;
+    
 }
 
 .mid-ex{
@@ -270,14 +284,13 @@ table td{
 }
 
 .mid-ex > div p{
-    max-width:50%;
+    max-width:60%;
     margin:0 auto;
     
 }
 
 .last-info-ex{
     margin-top:10px;
-    
     
 }
 
@@ -321,9 +334,56 @@ table td{
 }
 
 
+@media only screen and (min-width:600px){
+    .index{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 400px);
+        grid-gap: 10px;
+        grid-template-areas:
+            "first-item sec-item "
+            "third-item four-item";
+    }
+
+    .item-index{
+        margin:0px;
+    }
+
+}
 
 
+@media only screen and (min-width:1200px){
 
+    .index{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 400px);
+        grid-gap: 10px;
+        grid-template-areas:
+            "first-item first-item sec-item third-item"
+            "first-item first-item four-item five-item";
+    }
+
+    .first-item-index{
+        height:auto;
+        
+    }
+
+    .first-item-index div{
+        width:100%;
+        height:20%;
+    }
+
+    .item-index{
+        margin:0px;
+    }
+
+    html{
+        max-width:2000px;
+        margin:0 auto;
+    }
+
+}
 
 
 
