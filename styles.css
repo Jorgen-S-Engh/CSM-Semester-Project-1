@@ -126,7 +126,7 @@
 
 .eight-item-index{
     grid-template-areas: eight-item;
-    background-image: url("../images/roberto-nickson-396152.jpg"); 
+    background-image: url("../images/roberto-nickson-396152.jpg");
 }
 
 .nine-item-index{
@@ -139,8 +139,7 @@
 
 .grid-container-ex-all{
     display:grid;
-    /* grid-template-columns: 1fr; */
-    grid-template-rows:repeat(4, 400px);
+    grid-template-rows:repeat(8, 400px);
     row-gap: 10px;
 }
 
@@ -148,7 +147,6 @@
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url("../images/billetto-editorial-334686-high-res.jpg");
     background-size: cover;
     height:300px;
 
@@ -177,41 +175,50 @@
 }
 
 .item-card p{
-    font-size:0.8rem;
+    font-size:1rem;
 }
 
-.ex-item-two{
-    background-image: url("../images/andrew-ruiz-348421.jpg");
-}
-
-.ex-card-two, .ex-card-four{
+.ex-card-white{
     background-color:white;
 }
+.ex-card-white p, .ex-card-white h2{
+    color:black;
+    font-weight: normal;
+}
+
 
 .item-card a{
     text-decoration: none;
 }
 
-.ex-card-two p, .ex-item-two h2, .ex-item-four h2, .ex-item-four p{
-    color:black;
-    font-weight: normal;
+.ex-item-one{
+    background-image: url("../images/andrew-ruiz-348421.jpg");
 }
 
-.ex-item-three{
+.ex-item-two{
     background-image: url("../images/heart-2607178_1920.jpg");
-
+}
+.ex-item-three{
+    background-image: url("../images/samuel-zeller-158996.jpg");
 }
 
 .ex-item-four{
     background-image: url("../images/mammoth-1257288_1920.jpg");
-
 }
+.ex-item-five{
+    background-image: url("../images/maximalfocus-eZWGK5sIiBM-unsplash.jpg");
+}
+.ex-item-six{
+    background-image: url("../images/roberto-nickson-396152.jpg");
+}
+
+
 
 
 
 .first-info{
     font-weight: bold;
-    
+
 }
 
 /* exhibition.html */
@@ -263,7 +270,7 @@ table td{
 }
 
 .bullet-points-ex{
-    
+
 }
 
 .mid-ex{
@@ -280,23 +287,23 @@ table td{
     background-color: var(--blue);
     color:white;
     text-align: center;
-    
+
 }
 
 .mid-ex > div p{
     max-width:60%;
     margin:0 auto;
-    
+
 }
 
 .last-info-ex{
     margin-top:10px;
-    
+
 }
 
 /* See also section - exhibition.html */
 
-.item-container{
+.item-container-ex{
     background-image:url("../images/andrew-ruiz-348421.jpg");
 }
 
@@ -317,14 +324,14 @@ table td{
     position: relative;
     top:55px;
 
-} 
+}
 
 .dotted-lines{
     height:35%;
     display:flex;
     align-items: flex-end;
     justify-content: center;
-    
+
 }
 
 .fa-circle{
@@ -349,15 +356,29 @@ table td{
         margin:0px;
     }
 
+    .grid-container-ex-all{
+        display:grid;
+        gap:10px 20px;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows:repeat(2, 400px);
+    }
+
 }
 
 
 @media only screen and (min-width:1200px){
 
+    html{
+        max-width:2000px;
+        margin:0 auto;
+    }
+
+    /* index.html */
+
     .index{
         display:grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 400px);
+        grid-template-rows: repeat(2, 400px);
         grid-gap: 10px;
         grid-template-areas:
             "first-item first-item sec-item third-item"
@@ -366,7 +387,7 @@ table td{
 
     .first-item-index{
         height:auto;
-        
+
     }
 
     .first-item-index div{
@@ -378,10 +399,30 @@ table td{
         margin:0px;
     }
 
-    html{
-        max-width:2000px;
+    
+
+    /* exhibitions.html */
+
+    .grid-container-ex-all{
+        display:grid;
+        gap:10px 20px;
+        grid-template-columns: repeat(3, 400px);
+        grid-template-rows:repeat(2, 400px);
         margin:0 auto;
+    
     }
+
+    .item-container{
+        max-width:500px;
+        
+        
+    }
+
+
+
+
+
+
 
 }
 
