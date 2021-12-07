@@ -269,9 +269,6 @@ table td{
     margin:10px;
 }
 
-.bullet-points-ex{
-
-}
 
 .mid-ex{
     height:280px;
@@ -364,7 +361,7 @@ table td{
 }
 
 .text-get-involved{
-    max-width:90%;
+    max-width:340px;
     margin:0 auto;
 }
 
@@ -374,27 +371,61 @@ table td{
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: var(--blue);
-    width:250px;
+    width:300px;
     margin:0 auto;
+    height:350px;
 }
 
-.sign-up-now h2{
+.sign-up-headline{
     color:var(--blue);
-    padding:30px;
     background-color: white;
     border: solid 2px var(--blue);
-    
-    
-
+    text-align: center;
+    width:300px;
+    margin:0 auto;
+    font-size:1rem;
+    padding:15px 0px;
 }
-
-
 
 .sign-up-form{
     display:flex;
     flex-direction: column;
+    
+    
 }
+
+.volunteer{
+    padding:10px 0px;
+    color:var(--red);
+    margin-top:10px;
+
+}
+
+.submit{
+    color:var(--blue);
+    margin:0 auto;
+    border:solid 2px var(--blue);
+    width:300px;
+    text-align: center;
+    font-size:1rem;
+    padding:10px 0px;
+    margin-bottom:50px;
+}
+
+
+.submit:hover{
+    border:solid 2px var(--red);
+    color:var(--red);
+}
+
+.sign-up-form ::placeholder{
+    color:var(--red);
+    padding-left:10px;
+    font-weight:bold;
+}
+
 
 
 

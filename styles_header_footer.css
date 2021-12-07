@@ -24,6 +24,10 @@ body{
     
 }
 
+a{
+    text-decoration: none;
+}
+
 :root {
     --red: #d60001;
     --blue: #002e40;
@@ -128,10 +132,14 @@ footer p {
     font-size: 12px;
 }
 
-::placeholder {
-    color: black;
+.footer-info-right ::placeholder {
+    color: var(--blue);
     font-size: 0.8rem;
+    
+    
 }
+
+
 
 .footer-info-right input{
     width:75%;
