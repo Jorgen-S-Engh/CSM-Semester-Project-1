@@ -36,7 +36,6 @@
 
 .button{
     color:white;
-    text-decoration: none;
     text-align: center;
     line-height:55px;
     font-size:2rem;
@@ -75,7 +74,6 @@
     padding:10px;
     background-color:var(--red);
     color:white;
-    text-decoration: none;
 }
 
 .item-index h2{
@@ -184,11 +182,7 @@
 .ex-card-white p, .ex-card-white h2{
     color:black;
     font-weight: normal;
-}
-
-
-.item-card a{
-    text-decoration: none;
+    
 }
 
 .ex-item-one{
@@ -392,8 +386,6 @@ table td{
 .sign-up-form{
     display:flex;
     flex-direction: column;
-    
-    
 }
 
 .volunteer{
