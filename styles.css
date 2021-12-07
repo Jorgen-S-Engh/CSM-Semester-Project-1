@@ -139,7 +139,7 @@
 
 .grid-container-ex-all{
     display:grid;
-    grid-template-rows:repeat(8, 400px);
+    grid-template-rows:repeat(6, 400px);
     row-gap: 10px;
 }
 
@@ -340,8 +340,68 @@ table td{
 
 }
 
+/* get-involved.html */
+
+.get-involved-header{
+    background-image: url("../images/pexels-julia-m-cameron-6995237.jpg");
+    margin:0px;
+}
+
+
+.get-involved-header >div{
+    height:25%;
+}
+
+.get-involved-header h1{
+    font-size: 1.5rem;
+    font-weight:normal;
+    margin-top:15px;
+}
+
+.text-get-involved p{
+    margin:20px;
+
+}
+
+.text-get-involved{
+    max-width:90%;
+    margin:0 auto;
+}
+
+    /* signup section */
+
+.signup-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blue);
+    width:250px;
+    margin:0 auto;
+}
+
+.sign-up-now h2{
+    color:var(--blue);
+    padding:30px;
+    background-color: white;
+    border: solid 2px var(--blue);
+    
+    
+
+}
+
+
+
+.sign-up-form{
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+
 
 @media only screen and (min-width:600px){
+
     .index{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
@@ -350,6 +410,7 @@ table td{
         grid-template-areas:
             "first-item sec-item "
             "third-item four-item";
+        
     }
 
     .item-index{
@@ -359,8 +420,9 @@ table td{
     .grid-container-ex-all{
         display:grid;
         gap:10px 20px;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows:repeat(2, 400px);
+        margin:0 auto;
+        grid-template-columns: repeat(2, 400px);
+        grid-template-rows:repeat(3, 400px);
     }
 
 }
