@@ -206,10 +206,6 @@
     background-image: url("../images/roberto-nickson-396152.jpg");
 }
 
-
-
-
-
 .first-info{
     font-weight: bold;
 
@@ -419,6 +415,146 @@ table td{
 }
 
 
+/* store.html */
+
+.cover-store{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height:350px;
+    width:100%;
+    background-image: url("images/pexels-pavel-danilyuk-8294651 blue filter.jpg");
+    background-size: cover;
+
+}
+
+.cover-store > *{
+    color:white;
+    margin-bottom:25px;
+    text-align: center;
+}
+.cover-store p{
+    max-width:250px;
+}
+
+.text-store{
+    max-width:300px;
+    margin: 0 auto;
+}
+
+.text-store h2, .text-store p{
+    font-size:1rem;
+    margin: 15px 0px;
+}
+
+
+.mid-section-store{
+    background-image:url("images/pexels-pixabay-414860 blue filter.jpg")
+}
+
+.mid-section-store >*{
+    max-width:350px;
+}
+
+.browse-container{
+    display:flex;
+    justify-content: center;
+}
+.browse-products img{
+    max-width:130px;
+    margin:25px;
+}
+
+.browse-headline{
+    text-align: center;
+    margin-top:25px;
+}
+
+.browse-products{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:25px;
+}
+
+.browse-products p{
+    text-align: center;
+    font-size: 0.7rem;
+
+}
+
+/* explore.html */
+
+.cover-explore{
+    height:330px;
+}
+
+.cover-explore img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+
+}
+
+.welcome-text{
+    height:125px;
+    background-color: var(--blue);
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:15px;
+}
+
+.welcome-text >*{
+    font-size: 1rem;
+    text-align: center;
+    max-width: 320px;
+    margin-bottom:15px;
+}
+
+.welcome-text h1{
+    margin:15px 0px;
+    font-size:1.5rem;
+}
+
+.about-us{
+    max-width:380px;
+    margin:0 auto;
+    text-align: center;
+}
+
+.about-us p{
+    margin:15px;
+    text-align:left;
+}
+
+.explore-section{
+    background-image:url("images/pexels-kindel-media-7105597.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.kids-section h3{
+    margin:60px;
+    font-size:2rem;
+}
+
+.text-card-explore{
+    display: flex;
+    align-items: center;
+    height:100px;
+    background-color:var(--blue);
+    color:white;
+    text-align: center;
+}
 
 
 
