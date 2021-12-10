@@ -52,6 +52,7 @@ header {
 .hamburger-container {
     display: flex;
     flex-direction: column;
+    
 }
 
 header img {
@@ -67,6 +68,7 @@ header img {
 nav {
     display: none;
     z-index: 1;
+    
 }
 
 nav ul {
@@ -155,8 +157,11 @@ footer p {
 }
 
 @media only screen and (min-width:600px){
+    
+    
     nav{
         display:flex;
+        justify-content: center;
     }
 
     .icon-container a{
@@ -185,6 +190,10 @@ footer p {
 
     #hamburger-menu, .fa-bars{
         display:none;
+    }
+
+    .hamburger-menu{
+        margin:0 auto;
     }
 
     .icon-desktop{
