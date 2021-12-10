@@ -605,7 +605,7 @@ table td{
         display:grid;
         gap:10px 20px;
         margin:0 auto;
-        grid-template-columns: repeat(2, 400px);
+        grid-template-columns: repeat(2, auto);
         grid-template-rows:repeat(3, 400px);
     }
 
@@ -646,7 +646,6 @@ table td{
     }
 
     
-
     /* exhibitions.html */
 
     .grid-container-ex-all{
