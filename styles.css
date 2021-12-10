@@ -151,7 +151,7 @@
 }
 
 .item-card{
-    height:120px;
+    min-height:120px;
     background-color:var(--blue);
     color:white;
     width:80%;
@@ -299,7 +299,7 @@ table td{
     flex-direction: column;
     margin: 15px 0px;
     text-align: center;
-    height:500px;
+    min-height::500px;
     background-color:var(--blue);
 }
 
@@ -497,8 +497,13 @@ table td{
 
 }
 
+.explore-main p{
+    margin:25px;
+
+}
+
 .welcome-text{
-    height:125px;
+    min-height:125px;
     background-color: var(--blue);
     color:white;
     display:flex;
@@ -511,7 +516,6 @@ table td{
 .welcome-text >*{
     font-size: 1rem;
     text-align: center;
-    max-width: 320px;
     margin-bottom:15px;
 }
 
@@ -523,13 +527,6 @@ table td{
 .about-us h2{
     text-align: center;
     margin:10px;    
-}
-
-.about-us, .article-explore{
-    max-width:380px;
-    
-    text-align: left;
-    margin:25px;
 }
 
 .explore-section{
@@ -582,6 +579,7 @@ table td{
 
 .item-card-ex p, .item-card-ex h2{
     color:var(--blue);
+    margin:10px;
 }
 
 
