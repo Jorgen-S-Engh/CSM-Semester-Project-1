@@ -257,12 +257,11 @@ table td{
     display:flex;
     flex-direction: column;
     align-items: center;
-}
-
-.info-ex, .last-info-ex{
-    max-width: 85%;
+    max-width:90%;
     margin:0 auto;
 }
+
+
 
 
 .info-ex h2, .bullet-points-ex{
@@ -622,15 +621,12 @@ table td{
 
 }
 
-
 @media only screen and (min-width:1200px){
 
     html{
         max-width:2000px;
         margin:0 auto;
     }
-
-
 
     /* index.html */
 
@@ -662,21 +658,20 @@ table td{
         
     }
 
-
     /* exhibition.html */
-
 
     .main-exhibition{
         max-width:90%;
         margin:0 auto;
         display:grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: repeat(4, 250px;);
         grid-gap:20px;
         grid-template-areas: 
-        "ex-cover ex-info"
-        "mid-ex . "
-        "mid-ex .";
+        "ex-cover info-ex"
+        "ex-cover last-info-ex"
+        "mid-ex see-also-ex"
+        "mid-ex see-also-ex";
 
     }
 
@@ -685,15 +680,51 @@ table td{
         grid-area:ex-cover;
     }
 
-    .ex-info{
-        grid-area:ex-info;
+    .info-ex{
+        grid-area:info-ex;
+        background-color:var(--blue);
+        color:white;
+    }
+
+    .info-ex p, .last-info-ex p{
+        max-width:90%;
+        margin:0 auto;
     }
 
     .mid-ex{
         grid-area:mid-ex;
-        height:500px;
+        height:auto; 
+    }
+    .mid-ex > div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
     }
 
+    .last-info-ex{
+        grid-area:last-info-ex;
+        background-color:var(--blue);
+        color:white;
+        font-style:italic;
+        display:flex;
+        justify-content: center;
+
+    }
+
+    .last-info-ex, .info-ex{
+        max-width:100%;
+    }
+
+    .see-also-ex{
+        grid-area: see-also-ex;
+        margin:0px;
+        display:flex;
+        justify-content: center;
+    }
+
+    .bullet-points-ex{
+        text-align:left;
+    }
     
 
 
