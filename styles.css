@@ -23,17 +23,31 @@
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
-    grid-area: first-item;
-
+    grid-area:first-item;
+    animation-name: explore;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    
 }
+
 
 .first-item-index div{
     background-color:var(--blue);
+    width:100%;
     height:30%;
     text-align:center;
     color:white;
 }
 
+@keyframes explore {
+    0% {background-image:url("images/vr6x6.jpg");}
+    25% {background-image:url("images/space 6x6.jpg");}
+    75% {background-image:url("images/heart 6x6.jpg");}
+    100% {background-image:url("images/robot 6x6.jpg");}
+
+  }
+
+}
 
 .first-item-index div p{
     max-width:90%;
@@ -276,7 +290,17 @@ table td{
     justify-content: flex-end;
     background-image:url("../images/possessed-photography-dRMQiAubdws-unsplash.jpg");
     background-size:cover;
+    animation-name: robots;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes robots {
+    0% {background-image:url("images/robot 6x6.jpg");}
+    50% {background-image:url("images/robot2 6x6.jpg");}
+    100% {background-image:url("images/machine 6x6.jpg");}
+
+  }
 
 .mid-ex >div{
     height:20%;
@@ -621,7 +645,7 @@ table td{
 
 }
 
-@media only screen and (min-width:1200px){
+@media only screen and (min-width:1250px){
 
     html{
         max-width:2000px;
@@ -650,6 +674,7 @@ table td{
         gap:10px 20px;
         grid-template-columns: repeat(3, 375px);
         grid-template-rows:repeat(2, 400px);
+        max-width:90%;
         margin:0 auto;
     }
 
@@ -694,29 +719,7 @@ table td{
     .mid-ex{
         grid-area:mid-ex;
         height:auto; 
-        animation-name: example;
-        animation-duration: 8s;
-        animation-iteration-count: infinite;
-    }
 
-    @keyframes example {
-        0% {background-image:url("images/pexels-pavel-danilyuk-8294651.jpg");}
-        25% {background-image:url("images/pexels-pixabay-414860 blue filter.jpg");}
-        50% {background-image:url("images/pexels-kindel-media-7105597.jpg");}
-        100% {background-image:url("images/mammoth-1257288_1920.jpg");}
-        /* to {background-image:url("images/possessed-photography-dRMQiAubdws-unsplash.jpg");} */
-      }
-
-
-      @keyframes mymove {
-        0%   {top: 0px;}
-        25%  {top: 200px;}
-        50%  {top: 100px;}
-        75%  {top: 200px;}
-        100% {top: 0px;}
-      }
-    .mid-ex:hover{
-        background-image:url("images/pexels-pavel-danilyuk-8294651.jpg")
     }
 
     .mid-ex > div{
