@@ -40,10 +40,10 @@
 }
 
 @keyframes explore {
-    0% {background-image:url("images/vr6x6.jpg");}
-    25% {background-image:url("images/space 6x6.jpg");}
-    75% {background-image:url("images/heart 6x6.jpg");}
-    100% {background-image:url("images/robot 6x6.jpg");}
+    0% {background-image:url("images/vr 4x6.jpg");}
+    25% {background-image:url("images/mamooth 4x6.jpg");}
+    75% {background-image:url("images/heart 4x6.jpg");}
+    100% {background-image:url("images/robot4x6.jpg");}
 
   }
 
@@ -288,19 +288,11 @@ table td{
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image:url("../images/possessed-photography-dRMQiAubdws-unsplash.jpg");
+    background-image:url("images/machine 6x6.jpg");
     background-size:cover;
-    animation-name: robots;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
 }
 
-@keyframes robots {
-    0% {background-image:url("images/robot 6x6.jpg");}
-    50% {background-image:url("images/robot2 6x6.jpg");}
-    100% {background-image:url("images/machine 6x6.jpg");}
 
-  }
 
 .mid-ex >div{
     height:20%;
@@ -642,6 +634,17 @@ table td{
         grid-template-columns: repeat(2, auto);
         grid-template-rows:repeat(3, 400px);
     }
+
+    .mid-ex{
+        transition: background-image 1200ms;
+    }
+
+
+    .mid-ex:hover{
+        background-image:url("images/robot2 6x6.jpg")
+    
+    }
+    
 
 }
 
