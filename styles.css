@@ -694,7 +694,31 @@ table td{
     .mid-ex{
         grid-area:mid-ex;
         height:auto; 
+        animation-name: example;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
     }
+
+    @keyframes example {
+        0% {background-image:url("images/pexels-pavel-danilyuk-8294651.jpg");}
+        25% {background-image:url("images/pexels-pixabay-414860 blue filter.jpg");}
+        50% {background-image:url("images/pexels-kindel-media-7105597.jpg");}
+        100% {background-image:url("images/mammoth-1257288_1920.jpg");}
+        /* to {background-image:url("images/possessed-photography-dRMQiAubdws-unsplash.jpg");} */
+      }
+
+
+      @keyframes mymove {
+        0%   {top: 0px;}
+        25%  {top: 200px;}
+        50%  {top: 100px;}
+        75%  {top: 200px;}
+        100% {top: 0px;}
+      }
+    .mid-ex:hover{
+        background-image:url("images/pexels-pavel-danilyuk-8294651.jpg")
+    }
+
     .mid-ex > div{
         display:flex;
         justify-content: center;
@@ -706,9 +730,11 @@ table td{
         background-color:var(--blue);
         color:white;
         font-style:italic;
-        display:flex;
-        justify-content: center;
 
+    }
+
+    .item-container-ex{
+        max-width:1000px;
     }
 
     .last-info-ex, .info-ex{
@@ -718,9 +744,8 @@ table td{
     .see-also-ex{
         grid-area: see-also-ex;
         margin:0px;
-        display:flex;
-        justify-content: center;
     }
+
 
     .bullet-points-ex{
         text-align:left;
