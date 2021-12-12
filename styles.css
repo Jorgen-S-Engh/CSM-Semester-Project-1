@@ -605,6 +605,78 @@ table td{
     margin:10px;
 }
 
+/* test */
+
+.test-main{
+    display:flex;
+    justify-content: center;
+}
+
+.slider-container{
+    display:flex;
+    flex-direction: column;    
+
+}
+
+.slider-card-one{
+    height:200px;
+    background-color: var(--blue);
+    color:white;
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.slider-card-one h2{
+    /* max-width:200px; */
+    text-align: center;
+    margin:0 auto;
+    margin:15px;
+}
+
+.slider-card-one p{
+    margin-bottom:10px;
+}
+
+.button-ex-test{
+    position: static;
+}
+
+.slider{
+    overflow:hidden;
+    width:400px;
+
+}
+
+.slider figure{
+    position:relative;
+    width:500%;
+    left:0;
+    animation: 15s slider infinite;
+    height:200px;
+}
+
+.slider figure img{
+    width: 20%;
+    float: left;
+    /* object-fit: contain; */
+}
+
+@keyframes slider {
+    0% {left:0;}
+    25% {left:-100%;}
+    50% {left:-200%;}
+    75% {left:-300%;}
+    100% {left:-400%;}
+}
+
+
+
+
+
+/* test-end */
+
 
 @media only screen and (min-width:600px){
 
