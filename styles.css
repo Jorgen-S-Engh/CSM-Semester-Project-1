@@ -605,8 +605,7 @@ table td{
     margin:10px;
 }
 
-/* test */
-
+/* slider */
 
 
 .slider-container{
@@ -616,6 +615,7 @@ table td{
     background-color: var(--blue);
     max-width:600px;
     grid-area:slider;
+    margin-top:15px;
 }
 .slider-headline h2{
     color:white;
@@ -644,7 +644,6 @@ table td{
 }
 
 .button-ex-test{
-    max-width:100px;
     margin:0 auto;
 }
 
@@ -669,7 +668,6 @@ table td{
 .slider figure img{
     width: 20%;
     float: left;
-
 }
 
 @keyframes slider {
@@ -681,10 +679,6 @@ table td{
     100% {left:0;}
 }
 
-
-
-
-/* test-end */
 
 
 @media only screen and (min-width:600px){
@@ -838,18 +832,6 @@ table td{
         text-align:left;
     }
     
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
