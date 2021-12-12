@@ -613,7 +613,6 @@ table td{
     flex-direction: column;
     justify-content: flex-end;    
     background-color: var(--blue);
-    max-width:600px;
     grid-area:slider;
     margin-top:15px;
 }
@@ -797,7 +796,6 @@ table td{
     .mid-ex{
         grid-area:mid-ex;
         height:auto; 
-
     }
 
     .mid-ex > div{
@@ -811,8 +809,11 @@ table td{
         background-color:var(--blue);
         color:white;
         font-style:italic;
-
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
     }
+
 
     .item-container-ex{
         max-width:1000px;
@@ -822,11 +823,9 @@ table td{
         max-width:100%;
     }
 
-    .see-also-ex{
-        grid-area: see-also-ex;
-        margin:0px;
+    .slider-container{
+        margin-top:0px;
     }
-
 
     .bullet-points-ex{
         text-align:left;
