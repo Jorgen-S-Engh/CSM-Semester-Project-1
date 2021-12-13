@@ -741,11 +741,48 @@ table td{
     /* store.html */
 
     .store-main{
-        display:flex;
-        /* flex-direction: column; */
+        display:grid;
         max-width:900px;
         margin:0 auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 350px 350px 350px;
+        grid-template-areas:
+        "cover-store text-store"
+        "text-store-mid mid-store"
+        "browse1 browse2"
+         ;
     }
+
+    .cover-store{
+        grid-area:cover-store;
+    }
+
+    .text-store{
+        grid-area:text-store;
+    }
+
+    .browse-grid-container{
+        grid-area:browse1;
+    }
+
+    .mid-section-store{
+        grid-area:mid-store;
+    }
+
+    .text-store-mid{
+        grid-area:text-store-mid;
+    }
+
+    .browse-2-grid-container{
+        grid-areas:browse2;
+    }
+
+
+
+
+
+
+
 
     /* get-involved.html */
 
