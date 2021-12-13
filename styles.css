@@ -355,7 +355,7 @@ table td{
 /* get-involved.html */
 
 .get-involved-header{
-    background-image: url("../images/pexels-julia-m-cameron-6995237.jpg");
+    background-image: url("../images/get-invoved-desktop.jpg");
     margin:0px;
 }
 
@@ -424,7 +424,6 @@ table td{
     text-align: center;
     font-size:1rem;
     padding:10px 0px;
-    margin-bottom:50px;
 }
 
 
@@ -743,10 +742,41 @@ table td{
 
     .store-main{
         display:flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         max-width:900px;
         margin:0 auto;
     }
+
+    /* get-involved.html */
+
+    .get-involved-main{
+        display:grid;
+        max-width:900px;
+        grid-column-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        margin:0 auto;
+        grid-template-areas: 
+        "get-involved-header get-involved-main"
+        "get-involved-header sign-up-container";
+        
+    }
+
+    .get-involved-header{
+        grid-area:get-involved-header;
+        height:auto;
+    }
+    .get-involved-main{
+        grid-area:get-involved-main;
+    }
+    .sign-up-desktop-container{
+        grid-area:sign-up-container;
+    }
+
+    .text-get-involved p{
+        margin-top:0px;
+    }
+
+
     
 
 }
