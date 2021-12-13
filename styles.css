@@ -275,13 +275,9 @@ table td{
     margin:0 auto;
 }
 
-
-
-
 .info-ex h2, .bullet-points-ex{
     margin:10px;
 }
-
 
 .mid-ex{
     height:280px;
@@ -291,7 +287,6 @@ table td{
     background-image:url("images/machine 6x6.jpg");
     background-size:cover;
 }
-
 
 
 .mid-ex >div{
@@ -450,7 +445,6 @@ table td{
     width:100%;
     background-image: url("images/pexels-pavel-danilyuk-8294651 blue filter.jpg");
     background-size: cover;
-
 }
 
 .cover-store > *{
@@ -458,6 +452,7 @@ table td{
     margin-bottom:25px;
     text-align: center;
 }
+
 .cover-store p{
     max-width:250px;
 }
@@ -485,10 +480,7 @@ table td{
     display:flex;
     justify-content: center;
 }
-.browse-products img{
-    max-width:130px;
-    margin:15px;
-}
+
 
 .browse-headline{
     text-align: center;
@@ -505,8 +497,62 @@ table td{
 .browse-products p{
     text-align: center;
     font-size: 0.7rem;
-
 }
+
+.mid-section-store{
+    animation: hue-animation 5s infinite;
+}
+
+@keyframes hue-animation {
+    0% {
+      filter: hue-rotate(-0.25turn);
+    }
+
+    50% {
+        filter: hue-rotate(-0.50turn);
+      }
+    
+    100% {
+        filter: hue-rotate(-0.00turn);
+    }
+}
+
+.browse-products-desktop{
+    overflow:hidden;
+    height:350px;
+    max-width:350px;
+    margin:0 auto;
+}
+
+.browse-container{
+    position:relative;
+    width:500%;
+    left:0;
+    animation: 10s product-slider infinite;
+    height:auto;
+}
+
+.browse-products img{
+    float: left;
+}
+
+.browse-products{
+    margin: 0px 20px;
+}
+
+@keyframes product-slider {
+    0% {left:0;}
+    20% {left:-100%;}
+    40% {left:-200%;}
+    60% {left:-300%;}
+    80% {left:-400%;}
+    100% {left:-500%;}
+    
+}
+
+
+
+
 
 /* explore.html */
 
@@ -604,7 +650,7 @@ table td{
     margin:10px;
 }
 
-/* slider */
+/* slider-exhibition */
 
 
 .slider-container{
@@ -652,7 +698,6 @@ table td{
 
 .slider{
     overflow:hidden;
-    /* width:400px; */
 }
 
 .slider figure{
@@ -676,7 +721,6 @@ table td{
     95% {left:-400%;}
     100% {left:0;}
 }
-
 
 
 @media only screen and (min-width:600px){
@@ -715,9 +759,8 @@ table td{
 
     .mid-ex:hover{
         background-image:url("images/robot2 6x6.jpg")
-    
-    }
 
+    }
 
     /* explore.html */
 
@@ -745,11 +788,11 @@ table td{
         max-width:900px;
         margin:0 auto;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 350px 350px 350px;
+        grid-template-rows: repeat(4, auto);
         grid-template-areas:
         "cover-store text-store"
-        "text-store-mid mid-store"
-        "browse1 browse2"
+        "cover-store text-store-mid"
+        "browse-desktop mid-store"
          ;
     }
 
@@ -757,31 +800,29 @@ table td{
         grid-area:cover-store;
     }
 
+    .cover-store h1{
+        max-width:350px;
+    }
+
     .text-store{
         grid-area:text-store;
     }
 
-    .browse-grid-container{
-        grid-area:browse1;
-    }
-
     .mid-section-store{
-        grid-area:mid-store;
+        grid-area:mid-store; 
     }
 
     .text-store-mid{
         grid-area:text-store-mid;
     }
 
-    .browse-2-grid-container{
-        grid-areas:browse2;
+    .browse-products-desktop{
+        grid-area:browse-desktop;
     }
 
-
-
-
-
-
+    .browse-products-desktop {
+        max-width:250px;
+    }
 
 
     /* get-involved.html */
@@ -813,9 +854,12 @@ table td{
         margin-top:0px;
     }
 
+}
 
-    
-
+@media only screen and (min-width:800px){
+    .browse-products-desktop {
+        max-width:350px;
+    }
 }
 
 @media only screen and (min-width:1250px){
@@ -935,6 +979,13 @@ table td{
         flex-direction: column;
         margin:0 auto;
     }
+
+    /* store.html */
+
+    .browse-products-desktop {
+        max-width:350px;
+    }
+
 
 
 
