@@ -718,6 +718,35 @@ table td{
         background-image:url("images/robot2 6x6.jpg")
     
     }
+
+
+    /* explore.html */
+
+    .explore-main{
+        display:flex;
+        max-width:900px;
+        flex-direction: column;
+        margin:0 auto;
+    }
+
+    .slider-container{
+        max-height:700px;
+    }
+
+    .teachers{
+        background-image:url("images/teachers explore.jpg");
+        background-size:cover;
+        background-position: top;
+    }
+
+    /* store.html */
+
+    .store-main{
+        display:flex;
+        flex-direction: column;
+        max-width:900px;
+        margin:0 auto;
+    }
     
 
 }
@@ -830,9 +859,22 @@ table td{
     .bullet-points-ex{
         text-align:left;
     }
-    
 
+    /* explore.html */
+
+    .explore-main{
+        display:flex;
+        max-width:900px;
+        flex-direction: column;
+        margin:0 auto;
+    }
+
+
+
+
+ 
 }
+
 
 
 
