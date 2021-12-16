@@ -456,6 +456,7 @@ table td {
 
 .mid-section-store {
   background-image: url("images/pexels-pixabay-414860 blue filter.jpg");
+  background-position: center;
 }
 
 .mid-section-store > * {
@@ -493,12 +494,16 @@ table td {
     filter: hue-rotate(-0.25turn);
   }
 
-  50% {
+  25% {
     filter: hue-rotate(-0.5turn);
   }
 
+  50% {
+    filter: hue-rotate(-0.75turn);
+  }
+
   100% {
-    filter: hue-rotate(-0turn);
+    filter: hue-rotate(-0.25turn);
   }
 }
 
@@ -512,7 +517,6 @@ table td {
 .browse-container {
   position: relative;
   width: 500%;
-  left: 0;
   animation: 10s product-slider infinite;
   height: auto;
 }
@@ -690,7 +694,6 @@ table td {
 .slider figure {
   position: relative;
   width: 500%;
-  left: 0;
   animation: 10s slider infinite;
   height: 200px;
 }
@@ -745,6 +748,10 @@ table td {
 
   .item-index {
     margin: 0px;
+  }
+
+  .item-container:hover {
+    transform: scale(1.03);
   }
 
   .grid-container-ex-all {
@@ -822,6 +829,10 @@ table td {
   .get-involved-header {
     grid-area: get-involved-header;
     height: auto;
+  }
+
+  .get-involved-header:hover {
+    transform: scale(1);
   }
   .get-involved-main {
     grid-area: get-involved-main;
@@ -1027,7 +1038,6 @@ table td {
   }
 
   /* exhibition.html */
-
 
   /* store.html */
 

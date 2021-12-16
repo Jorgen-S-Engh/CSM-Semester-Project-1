@@ -16,19 +16,6 @@ html {
   height: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    background-color: black;
-    color: white;
-  }
-
-  .submit {
-    color: white;
-    border: solid 2px white;
-  }
-
-  /* fiks logo */
-}
 
 a {
   text-decoration: none;
@@ -235,3 +222,37 @@ footer p {
     max-width: 2000px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: black;
+    color: white;
+  }
+
+  .submit {
+    color: white;
+    border: solid 2px white;
+  }
+
+  nav ul li a {
+    color: white;
+    font-weight:normal;
+
+  }
+
+  nav ul{
+    background-color:var(--blue);
+    
+  }
+
+  nav ul li a:hover {
+    background-color: white;
+    color: var(--blue);
+    font-weight: normal;
+  }
+
+
+
+  
+}
+
