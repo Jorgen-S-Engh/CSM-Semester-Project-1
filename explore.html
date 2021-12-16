@@ -7,7 +7,7 @@
     <title>Community Science Museum</title>
     <meta
       name="description"
-      content="Home page of The Community Science Museum| Explore our exhibitions"
+      content="Explore our exhibitions: Cosmology, Biology and Medicine, Sci-fi, Evolution and Robotics and AI"
     />
     <link
       rel="stylesheet"
@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles_header_footer.css" />
   </head>
-
   <body>
     <header>
       <div class="hamburger-container">
@@ -26,20 +25,20 @@
         <input type="checkbox" id="hamburger-menu" />
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="index.html">Home</a></li>
             <li><a href="Exhibition-all.html">Exhibition</a></li>
-            <li class="current"><a href="explore.html">About us</a></li>
+            <li><a href="explore.html">About us</a></li>
             <li><a href="store.html">Store</a></li>
             <li><a href="get-involved.html">Get involved</a></li>
           </ul>
           <a class="icon-desktop" href="index.html"
-            ><img src="icons\open-science-735787 blue small.png" alt=""
+            ><img src="icons\open-science-735787 blue small.png" alt="Logo of The Comunity Science Museum. An atom with a keyhole at the center, with the letters CSM at the bottom"
           /></a>
         </nav>
       </div>
       <div class="icon-container">
         <a href="index.html"
-          ><img src="icons\open-science-735787 blue small.png" alt=""
+          ><img src="icons\open-science-735787 blue small.png" alt="Logo of The Comunity Science Museum. An atom with a keyhole at the center, with the letters CSM at the bottom"
         /></a>
       </div>
     </header>
@@ -139,11 +138,11 @@
         <div class="slider-headline"><h2>Explore Our Exhibitions</h2></div>
         <div class="slider">
           <figure>
-            <img src="images\vr 4x6.jpg" alt="" />
-            <img src="images\heart 4x6.jpg" alt="" />
-            <img src="images\mamooth 4x6.jpg" alt="" />
-            <img src="images\robot4x6.jpg" alt="" />
-            <img src="images\space 4x6.jpg" alt="" />
+            <img src="images\space 4x6.jpg" alt="Image of an astronaut in a cockpit"/>
+            <img src="images\heart 4x6.jpg" alt="Image of a model of a heart"/>
+            <img src="images\mamooth 4x6.jpg" alt="Skeleton of a woolly mammoth" />
+            <img src="images\robot4x6.jpg" alt="Iamge of a robot thats waving" />
+            <img src="images\vr 4x6.jpg" alt="A young person painting with VR-glasses on" />
           </figure>
         </div>
         <div class="slider-card-white">
@@ -161,7 +160,6 @@
         </div>
       </div>
     </main>
-
     <footer>
       <div class="footer-info-left">
         <h3>Contact</h3>
@@ -176,9 +174,11 @@
       </div>
       <div class="footer-info-right">
         <h3>Newsletter</h3>
-        <input type="text" name="name" id="name" placeholder="Name" />
-        <input type="email" name="email" placeholder="Email" />
-        <button class="button-footer">Submit</button>
+        <form action="POST">
+          <input type="text" name="name" id="name" placeholder="Name" />
+          <input type="email" name="email" placeholder="Email" />
+          <button class="button-footer">Submit</button>
+        </form>
       </div>
     </footer>
   </body>
