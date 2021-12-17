@@ -762,14 +762,6 @@ table td {
     grid-template-rows: repeat(3, 400px);
   }
 
-  .mid-ex {
-    transition: background-image 1200ms;
-  }
-
-  .mid-ex:hover {
-    background-image: url("images/robot2 6x6.jpg");
-  }
-
   /* store.html */
 
   .store-main {
@@ -784,6 +776,10 @@ table td {
       "browse-desktop mid-store"
       "slider-container-explore slider-container-explore";
   }
+
+  .mid-ex {
+    transition: background-image 1200ms;
+}
 
   .cover-store {
     grid-area: cover-store;
