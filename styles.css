@@ -777,6 +777,10 @@ table td {
       "slider-container-explore slider-container-explore";
   }
 
+  .mid-ex:hover{
+    background-image:url("images/robot2 6x6.jpg")
+  }
+
   .mid-ex {
     transition: background-image 1200ms;
 }
