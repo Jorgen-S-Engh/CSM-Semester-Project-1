@@ -1,6 +1,6 @@
 # THE SCIENCE MUSEUM
 
-![image](museum img.jpg)
+![image](https://github.com/Jorgen-S-Engh/CSM-Semester-Project-1/blob/main/museum%20img.jpg)
 
 This was the exam for the first semester on the frontend-development corse at Noroff.
 The assignment was to create a page for the "Science Museum".
