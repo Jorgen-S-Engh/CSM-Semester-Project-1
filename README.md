@@ -7,20 +7,23 @@ The assignment was to create a page for the "Science Museum".
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+For this project we could only use HTML5 and CSS3. The webpage had to have the following pages:
 
 You can add some bullet points if you'd like to:
 
-- List item 1
-- List item 2
-- List item 3
+- Home page
+- About page
+- Exhibitions
+- Events
+- Exhibition spesific
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+<p>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,github,netlify,vscode,adobexd" />
+  </a>
+</p>
 
 ## Getting Started
 
