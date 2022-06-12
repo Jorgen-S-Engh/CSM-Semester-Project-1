@@ -9,7 +9,6 @@ The assignment was to create a page for the "Science Museum".
 
 For this project we could only use HTML5 and CSS3. The webpage had to have the following pages:
 
-You can add some bullet points if you'd like to:
 
 - Home page
 - About page
